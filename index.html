@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekisteröitymislomake</title>
+    <link rel="stylesheet" href="tyylit.css">
+</head>
+<body>
+    <h1>Rekisteröitymislomake</h1>
+    <h4>Siirry kentästä toiseen tab-näppäimellä.</h4>
+    
+        
+    <div class="form-container">
+            <div class="form-row">
+                <label for="kayttajaId">Käyttäjä ID:</label>
+                <input type="text" id="kayttajaId">
+            </div>
+            <div class="form-row">
+                <label for="salasana">Salasana:</label>
+                <input type="text" id="salasana">
+            </div>
+            <div class="form-row">
+                <label for="nimi">Nimi:</label>
+                <input type="text" id="nimi">
+            </div>
+            <div class="form-row">
+                <label for="osoite">Osoite:</label>
+                <input type="text" id="osoite">
+            </div>
+            <div class="form-row">
+                <label for="maa">Maa:</label>
+                <select id="maa">
+                    <option>(Valitse maa)</option>
+                    <option>Suomi</option>
+                    <option>Ruotsi</option>
+                    <option>Norja</option>
+                    <option>Tanska</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="postinumero">Postinumero:</label>
+                <input type="text" id="postinumero">
+            </div>
+            <div class="form-row">
+                <label for="sposti">Sähköposti:</label>
+                <input type="text" id="sposti">
+            </div>
+            <div class="form-row">
+                <label>Sukupuoli:</label>
+                <div class="valitsin">
+                    <input type="radio" id="mies">
+                    <label for="mies">Mies</label>
+                </div>
+                <div class="valitsin">
+                    <input type="radio" id="nainen">
+                    <label for="nainen">Nainen</label>
+                </div>
+                <div class="valitsin">
+                    <input type="radio" id="muu">
+                    <label for="muu">Muu</label>
+                </div>
+                <div class="valitsin">
+                    <input type="radio" id="enhalua">
+                    <label for="enhalua">En halua vastata</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <label>Kieli:</label>
+                <div class="kielivalitsin">
+                    <input type="checkbox" id="suomi">
+                    <label for="suomi">Suomi</label>
+                </div>
+                <div class="kielivalitsin">
+                    <input type="checkbox" id="muukuinsuomi">
+                    <label for="muukuinsuomi">Muu kuin suomi</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="lisätietoja">Listätietoja:</label>
+                <textarea id="lisätietoja"></textarea>
+            </div>
+            <div class="form-row">
+                <button type="submit" id="painike">Lähetä</button>
+            </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

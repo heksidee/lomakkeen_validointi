@@ -1,0 +1,37 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-row {
+    display: flex;
+}
+
+.form-row label {   /* ohjeteksti */
+    width: 100px;
+    text-align: right;
+    margin-right: 7px;
+}
+
+.form-row input {   /*tekstikenttä*/
+    width: 200px;
+}
+#lisätietoja {      /*lisätietoja tekstikenttä*/
+    width: 400px;
+    height: 200px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    overflow: auto;
+
+}
+.valitsin input {
+    width: 15px !important;
+    text-align: left;
+}
+.kielivalitsin input {
+    width: 15px !important;
+    text-align: left;
+}
+.form-row button[type="submit"] {
+    margin-left: 200px;
+  }
