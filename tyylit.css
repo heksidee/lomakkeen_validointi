@@ -35,3 +35,12 @@
 .form-row button[type="submit"] {
     margin-left: 200px;
   }
+
+.form-row p {
+    margin: 0;
+    padding: 0;
+    margin-left: 7px;
+    color: red;
+    font-size: x-small;
+    font-style: italic;
+}   
