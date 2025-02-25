@@ -9,6 +9,8 @@ function yhdistettyFunktio(event) {
     tarkastaMaa();
     tarkastaZip();
     tarkastaSposti();
+    tarkastaSukupuoli();
+    kieliValitsin();
 }
 
 function tarkastaId() {
@@ -26,7 +28,7 @@ function tarkastaSalasana() {
     let erikois = /[!@£$€&%#]/
     let isot = /[A-ZÖÄÅ]/
     if (salaS.length < 6 || !numerot.test(salaS) || !erikois.test(salaS) || !isot.test(salaS)) {
-        document.getElementById("ss").innerHTML = "Salasanan tulee olla väh. 6 merkkiä, siinä tulee olla väh. 1 iso kirjain, 1 numero ja joku erikoismerkieistä '!@£$€&%#'"
+        document.getElementById("ss").innerHTML = "Salasanassa tulee olla väh. 6 merkkiä, 1 iso kirjain, 1 numero ja joku erikoismerkieistä '!@£$€&%#'"
         }
 }
 
@@ -72,3 +74,18 @@ function tarkastaSposti() {
     }
 }
 
+function tarkastaSukupuoli() {
+    let sPuoliValitsin = document.querySelector("input[name='sukupuoli']:checked");
+    document.getElementById("sukupuoliiidee").innerHTML = ""
+    if (sPuoliValitsin == null) {
+        document.getElementById("sukupuoliiidee").innerHTML = "Pakollinen kenttä, valitse jokin edellä olevista."
+    }
+}
+
+function kieliValitsin() {
+    let kielivalits = document.querySelector("input[name='kieli']:checked");
+    document.getElementById("kielet").innerHTML = ""
+    if (kielivalits == null) {
+        document.getElementById("kielet").innerHTML = "Pakollinen kenttä, valitsen jokin edellä olevista."
+    }
+}

@@ -1,3 +1,14 @@
+@media (max-width: 760px) {
+    .form-row p {
+        flex-basis: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .form-row {
+        align-items: flex-start;
+    }
+}
+
 .form-container {
     display: flex;
     flex-direction: column;
@@ -5,6 +16,17 @@
 }
 .form-row {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-row p {
+    margin: 0;
+    padding: 0;
+    margin-left: 7px;
+    color: red;
+    font-size: small;
+    font-style: italic;
 }
 
 .form-row label {   /* ohjeteksti */
@@ -13,34 +35,33 @@
     margin-right: 7px;
 }
 
-.form-row input {   /*tekstikenttä*/
-    width: 200px;
+#kayttajaId, #salasana {
+    width: 100px;
 }
+
+#nimi, #osoite, #sposti {
+    width: 360px;
+}
+
+#postinumero {
+    width: 160px;
+}
+
 #lisätietoja {      /*lisätietoja tekstikenttä*/
     width: 400px;
     height: 200px;
     padding-top: 5px;
     box-sizing: border-box;
     overflow: auto;
-
 }
-.valitsin input {
+.valitsin input {      /*sukupuolivalitsin radio*/
     width: 15px !important;
     text-align: left;
 }
-.kielivalitsin input {
+.kielivalitsin input {  /*kielivalitsin checkbox*/
     width: 15px !important;
     text-align: left;
 }
 .form-row button[type="submit"] {
     margin-left: 200px;
   }
-
-.form-row p {
-    margin: 0;
-    padding: 0;
-    margin-left: 7px;
-    color: red;
-    font-size: x-small;
-    font-style: italic;
-}   

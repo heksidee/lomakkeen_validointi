@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="tyylit.css">
 </head>
 <body>
-    <h1>Rekisteröitymislomake</h1>
-    <h4>Siirry kentästä toiseen tab-näppäimellä.</h4>
+    <div class="head-container">
+        <h1>Rekisteröitymislomake</h1>
+        <h4>Siirry kentästä toiseen tab-näppäimellä.</h4>
+    </div>
     
         
     <div class="form-container">
@@ -56,32 +58,30 @@
             <div class="form-row">
                 <label>Sukupuoli:</label>
                 <div class="valitsin">
-                    <input type="radio" id="mies">
+                    <input type="radio" id="mies" name="sukupuoli" value="Mies">
                     <label for="mies">Mies</label>
-                </div>
-                <div class="valitsin">
-                    <input type="radio" id="nainen">
+                
+                    <input type="radio" id="nainen" name="sukupuoli" value="Nainen">
                     <label for="nainen">Nainen</label>
-                </div>
-                <div class="valitsin">
-                    <input type="radio" id="muu">
+                
+                    <input type="radio" id="muu" name="sukupuoli" value="Muu">
                     <label for="muu">Muu</label>
-                </div>
-                <div class="valitsin">
-                    <input type="radio" id="enhalua">
+                
+                    <input type="radio" id="enhalua" name="sukupuoli" value="En halua vastata">
                     <label for="enhalua">En halua vastata</label>
                 </div>
+                <p id="sukupuoliiidee"></p>
             </div>
             <div class="form-row">
                 <label>Kieli:</label>
                 <div class="kielivalitsin">
-                    <input type="checkbox" id="suomi">
+                    <input type="checkbox" id="suomi" name="kieli" value="Suomi">
                     <label for="suomi">Suomi</label>
-                </div>
-                <div class="kielivalitsin">
-                    <input type="checkbox" id="muukuinsuomi">
+                
+                    <input type="checkbox" id="muukuinsuomi" name="kieli" value="Muu kuin Suomi">
                     <label for="muukuinsuomi">Muu kuin suomi</label>
                 </div>
+                <p id="kielet"></p>
             </div>
             <div class="form-row">
                 <label for="lisätietoja">Listätietoja:</label>
