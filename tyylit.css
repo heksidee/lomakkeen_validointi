@@ -7,10 +7,6 @@
         font-size: small;
         font-style: italic;
     }
-    
-    .form-row input {
-        display: flexbox;
-    }
 }
 
 .form-container {
