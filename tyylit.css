@@ -1,11 +1,15 @@
-@media (max-width: 760px) {
-    .form-row p {
+@media (max-width: 600px) {
+    .form-row span {
         flex-basis: 100%;
-        margin-left: 0;
+        margin-left: 108px;
         margin-top: 0;
+        color: red;
+        font-size: small;
+        font-style: italic;
     }
-    .form-row {
-        align-items: flex-start;
+    
+    .form-row input {
+        display: flexbox;
     }
 }
 
@@ -20,7 +24,7 @@
     flex-wrap: wrap;
 }
 
-.form-row p {
+.form-row span {
     margin: 0;
     padding: 0;
     margin-left: 7px;
